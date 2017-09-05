@@ -4,7 +4,7 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <nav id="primary_nav_wrap">
-        <span id="logo"> The Fitness Hub</span>
+        {/* <span id="logo"> LOGO</span> */}
         <ul>
           <li className="current-menu-item"><a href="#">Home</a></li>
           <li><a href="#">About Us</a>
@@ -42,10 +42,10 @@ export default class NavBar extends React.Component {
               <li><a href="#">Sub Menu 5</a></li>
             </ul> */}
           </li>
-          <li><a href="#">Our Team</a></li>
           <li><a href="#">Locations</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
+        <span><a id='buy' href='#'>BOOK/BUY</a></span>
       </nav>
     );
   }

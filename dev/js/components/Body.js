@@ -4,6 +4,9 @@ export default class Body extends React.Component {
     render() {
         return (
             <div>
+                <div id="hero">
+                    <div id="hero-overlay"></div>
+                </div>
                 <div className="square">
                     <div className="line-top"></div>
                     <div className="line-right"></div>
@@ -11,7 +14,9 @@ export default class Body extends React.Component {
                     <div className="line-left"></div>
                     <div className="black-mask"></div>
                     <div className="text">
-                        <p>Fitness is Personal</p>
+                        <p>The</p>
+                        <p>Fitness</p>
+                        <p>Hub</p>
                     </div>
                 </div>
             </div>

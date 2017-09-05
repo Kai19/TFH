@@ -1,24 +1,32 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:700");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway',sans-serif;
+  color: white;
 }
 
 .square {
-  width: 500px;
-  height: 500px;
-  position: relative;
+  left: 680px;
+  top: 500px;
+  width: 480px;
+  height: 480px;
+  position: fixed;
+  float: left;
   margin: 0;
   transform: translateY(-50%);
-  top: 400px;
+  top: 500px;
   overflow: hidden;
   animation: movinInBlock 1s ease-out;
+  z-index: 10;
 }
 
 .square div {
   position: absolute;
-  background: #000;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .square .line-top {
@@ -62,14 +70,57 @@ body {
 }
 
 .square .text {
+  padding-left: 110px;
   background: none;
-  font-size: 5em;
+  font-size: 4em;
   line-height: 1;
-  letter-spacing: 0px;
+  font-weight: bold;
+  letter-spacing: 10px;
   text-transform: uppercase;
   opacity: 0;
   animation: moveIn 0s 1.4s cubic-bezier(0.35, 1.1, 0.57, 0.76) forwards;
 }
+
+.text p {
+  z-index:1000;
+  color: white;
+}
+
+.text p:hover {
+  border-bottom: 10px;
+  -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon5 1.5s ease-in-out infinite alternate;
+  animation: neon5 1.5s ease-in-out infinite alternate;
+}
+
+@-moz-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
+
 
 @-moz-keyframes movinInBlock {
   0% {
