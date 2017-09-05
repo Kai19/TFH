@@ -25,8 +25,8 @@ export default class NavBar extends React.Component {
               <li><a href="#">Group Classes</a></li>
             </ul>
           </li>
-          <li><a href="#">Rates</a>
-            {/* <ul>
+          {/* <li><a href="#">Rates</a>
+            <ul>
               <li className="dir"><a href="#">Sub Menu 1</a></li>
               <li className="dir"><a href="#">Sub Menu 2 THIS IS SO LONG IT MIGHT CAUSE AN ISSEUE BUT MAYBE NOT?</a>
                 <ul>
@@ -40,8 +40,8 @@ export default class NavBar extends React.Component {
               <li><a href="#">Sub Menu 3</a></li>
               <li><a href="#">Sub Menu 4</a></li>
               <li><a href="#">Sub Menu 5</a></li>
-            </ul> */}
-          </li>
+            </ul>
+          </li> */}
           <li><a href="#">Locations</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
