@@ -14,9 +14,9 @@ export default class Body extends React.Component {
                     <div className="line-left"></div>
                     <div className="black-mask"></div>
                     <div className="text">
-                        <p>The</p>
+                        <p>&ensp; The</p>
                         <p>Fitness</p>
-                        <p>Hub</p>
+                        <p>&ensp; Hub</p>
                     </div>
                 </div>
             </div>

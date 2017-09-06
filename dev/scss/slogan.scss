@@ -1,17 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Oswald:700");
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway',sans-serif;
-  color: white;
-}
+
 
 .square {
   left: 680px;
   top: 500px;
-  width: 480px;
-  height: 480px;
+  width: 500px;
+  height: 600px;
   position: fixed;
   float: left;
   margin: 0;
@@ -70,15 +65,19 @@ body {
 }
 
 .square .text {
-  padding-left: 110px;
+  padding-top: 40px;
+  padding-left: 90px;
   background: none;
-  font-size: 4em;
+  font-size: 4.5em;
   line-height: 1;
   font-weight: bold;
   letter-spacing: 10px;
   text-transform: uppercase;
   opacity: 0;
   animation: moveIn 0s 1.4s cubic-bezier(0.35, 1.1, 0.57, 0.76) forwards;
+  font-family: 'Oswald',
+  sans-serif;
+  z-index:100;
 }
 
 .text p {

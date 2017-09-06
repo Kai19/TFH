@@ -1,26 +1,5 @@
 // This is the top-level scss file.
 @import 'navbar';
 @import 'slogan';
+@import 'background';
 
-#hero {
-  background: linear-gradient( rgba(20, 20, 20, .5), rgba(20, 20, 20, .5));
-  background-image: url('../images/fitness-1.jpg');
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  max-width: 100%;
-  height: auto;
-  width: 1880px;
-  min-height: 840px;
-  margin: 0 auto;
-  overflow: auto;
-  z-index: -1000;
-}
-
-#hero-overlay {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 100;
-}
